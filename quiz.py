@@ -101,7 +101,7 @@ QUESTIONS = {
 }
 
 num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
-questions = random.samplea(list(QUESTIONS.items()), k=num_questions)
+questions = random.sample(list(QUESTIONS.items()), k=num_questions)
 
 num_correct = 0
 
