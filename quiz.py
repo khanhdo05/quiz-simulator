@@ -113,9 +113,8 @@ for num, (question, alternatives) in enumerate(questions, start=1):
     print(f"{question}❓")
 
     correct_answer = alternatives[0]
-    sorted_alternatives = sorted(alternatives)
+    labeled_alternatives = dict(zip(ascii_lowercase, random.sample(alternatives, k=len(alternatives))))
 
-    labeled_alternatives = dict(zip(ascii_lowercase, sorted_alternatives))
     for label, alternative in labeled_alternatives.items():
         print(f"    ({label}) {alternative}")
 
