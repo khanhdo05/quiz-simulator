@@ -1,3 +1,5 @@
+from string import ascii_lowercase
+
 QUESTIONS = {
     "What is the color for: Stop, yield, or do what is shown on the sign" : [
         "red", "white", "green", "yellow"
