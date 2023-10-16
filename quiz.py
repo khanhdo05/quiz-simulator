@@ -101,7 +101,7 @@ QUESTIONS = {
 }
 
 num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
-questions = random.sample(list(QUESTIONS.item(), k=num_questions))
+questions = random.samplea(list(QUESTIONS.items()), k=num_questions)
 
 num_correct = 0
 
@@ -113,7 +113,9 @@ for num, (question, alternatives) in enumerate(questions, start=1):
     print(f"{question}❓")
 
     correct_answer = alternatives[0]
-    labeled_alternatives = dict(zip(ascii_lowercase, random.sample(alternatives, k=len(alternatives))))
+    labeled_alternatives = dict(
+        zip(ascii_lowercase, random.sample(alternatives, k=len(alternatives)))
+    )
 
     for label, alternative in labeled_alternatives.items():
         print(f"    ({label}) {alternative}")
