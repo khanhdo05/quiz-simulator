@@ -13,6 +13,9 @@ QUESTIONS = {
     ]
 }
 
+# System explanation: A for loop to initerate over the dictionary QUESTIONS with num as index (start=1) to label each
+# question. Display the Question No. and the question itself. And then create a dictionary of the ascii_lowercase as
+# key, and the sorted_alternatives as values. 
 for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     print(f"\nQuestion {num}:") #\n for new line
     print(f"{question}?")
