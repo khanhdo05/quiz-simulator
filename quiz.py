@@ -29,8 +29,9 @@ for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     for label, alternative in labeled_alternatives.items():
         print(f"    ({label}) {alternative}")
 
-    answer_label = input("\nChoice: ")
-    answer_label = answer_label.lower()
+    while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
+        print(f"Please answer one of {', '.join(labeled_alternatives)}")
+
     answer = labeled_alternatives[answer_label] # or .get(answer_label) works too
     if answer == correct_answer:
         num_correct += 1 # Increase by 1 if answer correctly
