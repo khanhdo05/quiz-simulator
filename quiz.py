@@ -1,3 +1,4 @@
+import random
 from string import ascii_lowercase
 
 # Dictionary of questions with alternatives, the first element of the alternatives is the correct answer.
