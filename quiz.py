@@ -18,7 +18,7 @@ QUESTIONS = {
 # key, and the sorted_alternatives as values. 
 for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     print(f"\nQuestion {num}:") #\n for new line
-    print(f"{question}?")
+    print(f"{question}❓")
 
     correct_answer = alternatives[0]
     sorted_alternatives = sorted(alternatives)
