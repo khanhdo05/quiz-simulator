@@ -9,4 +9,4 @@ for question, correct_answer in QUESTIONS:
     if answer.lower() == correct_answer:
         print("Ding ding! Correct!")
     else:
-        print(f"The answer if {correct_answer}, not {answer}.")
+        print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
