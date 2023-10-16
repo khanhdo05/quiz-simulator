@@ -1,5 +1,6 @@
 from string import ascii_lowercase
 
+# Dictionary of questions with alternatives, the first element of the alternatives is the correct answer.
 QUESTIONS = {
     "What is the color for: Stop, yield, or do what is shown on the sign" : [
         "red", "white", "green", "yellow"
@@ -12,15 +13,21 @@ QUESTIONS = {
     ]
 }
 
-for question, alternatives in QUESTIONS.items():
+for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
+    print(f"\nQuestion {num}:") #\n for new line
+    print(f"{question}?")
+
     correct_answer = alternatives[0]
     sorted_alternatives = sorted(alternatives)
-    for option, alternative in enumerate(sorted_alternatives):
-        print(f"({option}) {alternative}")
 
-    answer_option = int(input(f"{question}? "))
-    answer = sorted_alternatives[answer_option]
-    if answer.lower() == correct_answer:
-        print("Ding ding! Correct!")
+    labeled_alternatives = dict(zip(ascii_lowercase, sorted_alternatives))
+    for label, alternative in labeled_alternatives.items():
+        print(f"    ({label}) {alternative}")
+
+    answer_label = input("\nChoice: ")
+    answer_label = answer_label.lower()
+    answer = labeled_alternatives.get(answer_label)
+    if answer == correct_answer:
+        print("⭐ Ding ding! Correct! ⭐")
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
