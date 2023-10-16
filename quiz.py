@@ -16,8 +16,8 @@ for question, alternatives in QUESTIONS.items():
     for option, alternative in enumerate(sorted_alternatives):
         print(f"({option}) {alternative}")
 
-    answer_option = input(f"{question}? ")
-    answer = sorted_alternatives[int(answer_option)]
+    answer_option = int(input(f"{question}? "))
+    answer = sorted_alternatives[answer_option]
     if answer.lower() == correct_answer:
         print("Ding ding! Correct!")
     else:
