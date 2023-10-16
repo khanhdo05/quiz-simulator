@@ -13,6 +13,8 @@ QUESTIONS = {
     ]
 }
 
+num_correct = 0
+
 # System explanation: A for loop to initerate over the dictionary QUESTIONS with num as index (start=1) to label each
 # question. Display the Question No. and the question itself. And then create a dictionary of the ascii_lowercase as
 # key, and the sorted_alternatives as values. 
@@ -31,6 +33,9 @@ for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     answer_label = answer_label.lower()
     answer = labeled_alternatives.get(answer_label)
     if answer == correct_answer:
+        num_correct += 1
         print("⭐ Ding ding! Correct! ⭐")
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
+
+print(f"You've got {num_correct} correct answers!")
