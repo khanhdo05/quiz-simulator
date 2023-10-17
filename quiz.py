@@ -97,6 +97,25 @@ QUESTIONS = {
         "Amber lights flash at the top of the bus, the bus stops as red lights flash, a stop arm goes out and the door opens for the school children",
         "The bus driver activates red flashing lights at the top of the bus, and then activates amber flashing lights when the children are unloaded or seated",
         "The bus driver may do any sequence he or she desires"
+    ],
+    "Which of the following statements are true about safe following distance between your vehicle and the vehicle in front of you?" : [
+        ""
+    ],
+    "Passing is prohibited when" : [
+        ""
+    ],
+    "When you are merging onto the freeway or interstate, you should be driving" : [
+        ""
+    ],
+    "In speed zones of 45 mph or less, you must signal your turn continuously during the last ______feet before turning" : [
+        "100 ft",
+        "200 ft",
+        "300 ft"
+    ],
+    "In speed zones of 45 mph or more, you must signal your turn continuously during the last ______feet before turning" : [
+        "300 ft",
+        "200 ft",
+        "100 ft"
     ]
 }
 
