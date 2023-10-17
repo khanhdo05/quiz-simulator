@@ -141,11 +141,7 @@ def prepare_questions(questions, num_questions):
     num_questions = min(num_questions, len(questions))
     return random.sample(list(questions.items()), k=num_questions)
 
-num_correct = 0
-
-# System explanation: A for loop to initerate over the dictionary QUESTIONS with num as index (start=1) to label each
-# question. Display the Question No. and the question itself. And then create a dictionary of the ascii_lowercase as
-# key, and the sorted_alternatives as values. 
+# Handles user interaction
 def get_answer(question, alternatives):
     print(f"{question}❓")
 
@@ -163,7 +159,8 @@ def get_answer(question, alternatives):
     # get_answer takes in 2 parameters, a question and its alternative options and return the alternative that user chose
     return labeled_alternatives[answer_label]
 
-        
+
+
 for num, (question, alternatives) in enumerate(questions, start=1):
     print(f"\nQuestion {num}:") #\n for new line
     print(f"{question}❓")
