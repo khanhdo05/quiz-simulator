@@ -146,6 +146,24 @@ num_correct = 0
 # System explanation: A for loop to initerate over the dictionary QUESTIONS with num as index (start=1) to label each
 # question. Display the Question No. and the question itself. And then create a dictionary of the ascii_lowercase as
 # key, and the sorted_alternatives as values. 
+def get_answer(question, alternatives):
+    print(f"{question}❓")
+
+    # Print alternatives labeled by a, b, c,... 
+    labeled_alternatives = dict(
+        zip(ascii_lowercase, alternatives)
+    )
+    for label, alternative in labeled_alternatives.items():
+        print(f"    ({label}) {alternative}")
+
+    # Ask for user's input of alternative label, check if it's a valid one or not
+    while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
+        print(f"Please answer one of {', '.join(labeled_alternatives)}")
+
+    # get_answer takes in 2 parameters, a question and its alternative options and return the alternative that user chose
+    return labeled_alternatives[answer_label]
+
+        
 for num, (question, alternatives) in enumerate(questions, start=1):
     print(f"\nQuestion {num}:") #\n for new line
     print(f"{question}❓")
