@@ -65,8 +65,8 @@ QUESTIONS = {
         "Stop at least 10 feet from the front of the bus"
     ],
     "You are driving on a road that has two or more lanes in each direction. You meet a school bus traveling the opposite direction that is stopped with flashing red lights. Are you required to stop" : [
-        "Yes, you should always stop for a school bus that displays red flashing lights",
-        "No, when you are approaching a stopped school bus from the opposite direction on a road that has two or more lanes in each direction, you are not required to stop and may continue carefully. This is the only time you can pass a school bus that displays flashing red lights."
+        "No, when you are approaching a stopped school bus from the opposite direction on a road that has two or more lanes in each direction, you are not required to stop and may continue carefully. This is the only time you can pass a school bus that displays flashing red lights.",
+        "Yes, you should always stop for a school bus that displays red flashing lights"
     ],
     "Because there is often slow-moving traffic on county highways, you should" : [
         "Be ready to change your speed to the speed of traffic",
