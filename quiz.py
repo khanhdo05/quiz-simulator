@@ -164,7 +164,7 @@ def ask_question(question, alternatives):
     correct_answer = alternatives[0]
     ordered_alternatives = random.sample(alternatives, k=len(alternatives))
 
-    answer = get_answer(question, ordered_alternatives)
+    answer = get_answer(question, ordered_alternatives) # ask_question implements get_answer within its body
     if answer == correct_answer:
         print("⭐ Ding ding! Correct! ⭐")
         return 1
@@ -172,26 +172,13 @@ def ask_question(question, alternatives):
         print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
         return 0
 
-for num, (question, alternatives) in enumerate(questions, start=1):
-    print(f"\nQuestion {num}:") #\n for new line
-    print(f"{question}❓")
+# Combine every helper funcs together
+def run_quiz():
+    questions = prepare_questions(QUESTIONS, NUM_QUESTIONS_PER_QUIZ)
 
-    correct_answer = alternatives[0]
-    labeled_alternatives = dict(
-        zip(ascii_lowercase, random.sample(alternatives, k=len(alternatives)))
-    )
+    num_correct = 0
+    for num, (question, alternatives) in enumerate(questions, start=1):
+        print(f"\nQuestion {num}:")
+        num_correct += ask_question(question, alternatives)
 
-    for label, alternative in labeled_alternatives.items():
-        print(f"    ({label}) {alternative}")
-
-    while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
-        print(f"Please answer one of {', '.join(labeled_alternatives)}")
-
-    answer = labeled_alternatives[answer_label] # or .get(answer_label) works too
-    if answer == correct_answer:
-        num_correct += 1 # Increase by 1 if answer correctly
-        print("⭐ Ding ding! Correct! ⭐")
-    else:
-        print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
-
-print(f"You've got {num_correct} correct answers!")
+    print(f"You've got {num_correct} correct answers out of {num} questions!")
