@@ -159,7 +159,18 @@ def get_answer(question, alternatives):
     # get_answer takes in 2 parameters, a question and its alternative options and return the alternative that user chose
     return labeled_alternatives[answer_label]
 
+# Check if answer is corect or not, if correct, return 1, so later can count how many correct answers
+def ask_question(question, alternatives):
+    correct_answer = alternatives[0]
+    ordered_alternatives = random.sample(alternatives, k=len(alternatives))
 
+    answer = get_answer(question, ordered_alternatives)
+    if answer == correct_answer:
+        print("⭐ Ding ding! Correct! ⭐")
+        return 1
+    else:
+        print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
+        return 0
 
 for num, (question, alternatives) in enumerate(questions, start=1):
     print(f"\nQuestion {num}:") #\n for new line
