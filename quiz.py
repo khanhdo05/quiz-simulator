@@ -99,13 +99,20 @@ QUESTIONS = {
         "The bus driver may do any sequence he or she desires"
     ],
     "Which of the following statements are true about safe following distance between your vehicle and the vehicle in front of you?" : [
-        ""
+        "All options",
+        "A two-second following distance may be sufficient in normal conditions for an experienced driver",
+        "An inexperienced or beginning driver should maintain at least a three-second following distance under normal driving conditions",
+        "At speeds of 40 mph, a four- to five-second following distance is recommended. When road conditions are slippery or the vehicle in front of you blocks your view, a following distance of six or more seconds is recommended."
     ],
     "Passing is prohibited when" : [
-        ""
+        "You are within 100 feet of an intersection or railroad crossing",
+        "The vehicle you are following has a slow-moving vehicle symbol",
+        "You would be required to pass to the right of a left turning vehicle"
     ],
     "When you are merging onto the freeway or interstate, you should be driving" : [
-        ""
+        "At or near the same speed as the traffic on the freeway or interstate",
+        "5 to 10 mph slower than the traffic on the freeway or interstate",
+        "The posted speed limit for traffic on the freeway or interstate"
     ],
     "In speed zones of 45 mph or less, you must signal your turn continuously during the last ______feet before turning" : [
         "100 ft",
@@ -116,6 +123,16 @@ QUESTIONS = {
         "300 ft",
         "200 ft",
         "100 ft"
+    ],
+    "You should always travel" : [
+        "According to road and weather conditions",
+        "At the speed of vehicles in front of you",
+        "At the speed limit"
+    ],
+    "When it is raining, you should be most careful when turning or stopping" : [
+        "During the first half hour of rain",
+        "A half hour after it stops raining",
+        "After it has been raining all day"
     ]
 }
 
