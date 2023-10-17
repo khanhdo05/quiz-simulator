@@ -182,3 +182,7 @@ def run_quiz():
         num_correct += ask_question(question, alternatives)
 
     print(f"You've got {num_correct} correct answers out of {num} questions!")
+
+# Protect run_quiz call with an if __name__ == "__main__" test
+if __name__ == "__main__":
+    run_quiz()
