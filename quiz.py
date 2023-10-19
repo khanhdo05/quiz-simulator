@@ -142,6 +142,9 @@ QUESTIONS = {
     ],
     "Unless a sign is posted, you may turn right at a red light if" : [
         ""
+    ],
+    "Before making a turn, you should" : [
+        ""
     ]
 }
 
