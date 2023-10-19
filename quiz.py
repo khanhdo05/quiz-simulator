@@ -158,6 +158,15 @@ QUESTIONS = {
         "Stop and yield the right of way",
         "Stop and wait for the green light",
         "Slow and go with caution"
+    ],
+    "As your speed increases it is most important to" : [
+        ""
+    ],
+    "When driving on gravel or dirt roads" : [
+        ""
+    ],
+    "The best way to keep your car from hydroplaning (tires riding on top of water) is" : [
+        ""
     ]
 }
 
