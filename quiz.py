@@ -135,7 +135,9 @@ QUESTIONS = {
         "After it has been raining all day"
     ],
     "You are traveling on a two- or three-lane road and meet a stopped school bus with its red lights flashing. You must" : [
-        ""
+        "Stop and remain stopped until the red lights stop flashing and the stop arm is withdrawn",
+        "Stop and proceed after a few seconds",
+        "Stop only if children are crossing the roadway"
     ],
     "Broken yellow lines (dashes) are used on streets and highways to" : [
         ""
