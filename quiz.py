@@ -1,7 +1,7 @@
 import random
 from string import ascii_lowercase
 
-NUM_QUESTIONS_PER_QUIZ = 5
+NUM_QUESTIONS_PER_QUIZ = 25
 # Dictionary of questions with alternatives, the first element of the alternatives is the correct answer.
 QUESTIONS = {
     "When preparing to make a left turn from a two-way street, you should drive" : [
