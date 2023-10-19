@@ -150,7 +150,9 @@ QUESTIONS = {
         "The street you are turning onto is one-way"
     ],
     "Before making a turn, you should" : [
-        ""
+        "Look to see if other vehicles and/or pedestrians will be in your way",
+        "Stop at a crosswalk",
+        "Move slightly to the left when turning right and move slightly to the right when turning left"
     ]
 }
 
