@@ -140,7 +140,9 @@ QUESTIONS = {
         "Stop only if children are crossing the roadway"
     ],
     "Broken yellow lines (dashes) are used on streets and highways to" : [
-        ""
+        "Separate lanes of traffic moving in opposite directions",
+        "Indicate no passing zones",
+        "Separate lanes of traffic moving in the same direction"
     ],
     "Unless a sign is posted, you may turn right at a red light if" : [
         ""
