@@ -153,6 +153,11 @@ QUESTIONS = {
         "Look to see if other vehicles and/or pedestrians will be in your way",
         "Stop at a crosswalk",
         "Move slightly to the left when turning right and move slightly to the right when turning left"
+    ],
+    "A flashing red light at an intersection means" : [
+        "Stop and yield the right of way",
+        "Stop and wait for the green light",
+        "Slow and go with caution"
     ]
 }
 
