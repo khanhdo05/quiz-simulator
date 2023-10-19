@@ -133,6 +133,15 @@ QUESTIONS = {
         "During the first half hour of rain",
         "A half hour after it stops raining",
         "After it has been raining all day"
+    ],
+    "You are traveling on a two- or three-lane road and meet a stopped school bus with its red lights flashing. You must" : [
+        ""
+    ],
+    "Broken yellow lines (dashes) are used on streets and highways to" : [
+        ""
+    ],
+    "Unless a sign is posted, you may turn right at a red light if" : [
+        ""
     ]
 }
 
