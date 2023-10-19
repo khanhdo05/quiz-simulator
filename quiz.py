@@ -166,7 +166,12 @@ QUESTIONS = {
         ""
     ],
     "The best way to keep your car from hydroplaning (tires riding on top of water) is" : [
-        ""
+        "Keep speed down"
+    ],
+    "When you are behind a motorcycle, you should" : [
+        "Allow more following distance",
+        "Be ready to use your horn",
+        "Concentrate on the center line"
     ]
 }
 
