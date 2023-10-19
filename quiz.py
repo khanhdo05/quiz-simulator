@@ -145,7 +145,9 @@ QUESTIONS = {
         "Separate lanes of traffic moving in the same direction"
     ],
     "Unless a sign is posted, you may turn right at a red light if" : [
-        ""
+        "You stop and yield to pedestrians and other vehicles before turning",
+        "You slow down and proceed with caution",
+        "The street you are turning onto is one-way"
     ],
     "Before making a turn, you should" : [
         ""
