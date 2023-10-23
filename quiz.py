@@ -3,10 +3,10 @@
 import random
 from string import ascii_lowercase
 import pathlib
-try:
-    import tomllib
-except ModuleNotFoundError:
-    import tomli as tomllib
+try: # Wrapping import in a try-except statement
+    import tomllib # First try to import tomllib (if using Python 3.11)
+except ModuleNotFoundError: # If fails
+    import tomli as tomllib # Try to import tomli but renames as tomllib
 
 NUM_QUESTIONS_PER_QUIZ = 25
 QUESTIONS_PATH = pathlib.Path(__file__).parent / "questions.toml"
