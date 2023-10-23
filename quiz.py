@@ -10,7 +10,7 @@ except ModuleNotFoundError: # If fails
 
 NUM_QUESTIONS_PER_QUIZ = 25
 QUESTIONS_PATH = pathlib.Path(__file__).parent / "questions.toml"
-QUESTIONS = tomllib.loads(QUESTIONS_PATH.read_text())
+QUESTIONS = tomllib.loads(QUESTIONS_PATH.read_text()) # read_text() to read toml file as a text string and then loads() to parse that string into a dict
 
 # Deals with general parameters, not specific constants bound above -> doesn't depend on global variables
 def prepare_questions(questions, num_questions):
