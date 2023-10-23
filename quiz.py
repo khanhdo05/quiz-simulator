@@ -2,7 +2,7 @@
 
 import random
 from string import ascii_lowercase
-import pathlib
+import pathlib # Use pathlib to handles the path to questions.toml
 try: # Wrapping import in a try-except statement
     import tomllib # First try to import tomllib (if using Python 3.11)
 except ModuleNotFoundError: # If fails
