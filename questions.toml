@@ -56,34 +56,30 @@ question = "Which of the following is a safe backing technique"
 answers = ["Accelerate gently and smoothly while looking carefully behind you"]
 alternatives = ["Look forward out through the windshield", "Hold the steering wheel underhanded"]
 
-"What should you do as you approach a curve in the road" = [
-    "Reduce your speed before you enter the curve",
-    "Shift your weight behind the wheel",
-    "Put on your four-way flashers"
-]
+[[questions]]
+question = "What should you do as you approach a curve in the road?"
+answers = ["Reduce your speed before you enter the curve"]
+alternatives = ["Shift your weight behind the wheel", "Put on your four-way flashers"]
 
-"If you are on a two-lane highway when meeting an oncoming school bus with its amber (yellow) warning lights flashing, you must" = [
-    "Slow to 20 mph and prepare to stop",
-    "Continue as usual",
-    "Stop at least 10 feet from the front of the bus"
-]
+[[questions]]
+question = "If you are on a two-lane highway when meeting an oncoming school bus with its amber (yellow) warning lights flashing, you must"
+answers = ["Slow to 20 mph and prepare to stop"]
+alternatives = ["Continue as usual", "Stop at least 10 feet from the front of the bus"]
 
-"You are driving on a road that has two or more lanes in each direction. You meet a school bus traveling the opposite direction that is stopped with flashing red lights. Are you required to stop" = [
-    "No, when you are approaching a stopped school bus from the opposite direction on a road that has two or more lanes in each direction, you are not required to stop and may continue carefully. This is the only time you can pass a school bus that displays flashing red lights.",
-    "Yes, you should always stop for a school bus that displays red flashing lights"
-]
+[[questions]]
+question = "You are driving on a road that has two or more lanes in each direction. You meet a school bus traveling the opposite direction that is stopped with flashing red lights. Are you required to stop?"
+answers = ["No, when you are approaching a stopped school bus from the opposite direction on a road that has two or more lanes in each direction, you are not required to stop and may continue carefully. This is the only time you can pass a school bus that displays flashing red lights."]
+alternatives = ["Yes, you should always stop for a school bus that displays red flashing lights"]
 
-"Because there is often slow-moving traffic on county highways, you should" = [
-    "Be ready to change your speed to the speed of traffic",
-    "Stay in the left lane and drive at the speed limit",
-    "Pass slow-moving vehicles on curves if they are slowing down"
-]
+[[questions]]
+question = "Because there is often slow-moving traffic on county highways, you should"
+answers = ["Be ready to change your speed to the speed of traffic"]
+alternatives = ["Stay in the left lane and drive at the speed limit", "Pass slow-moving vehicles on curves if they are slowing down"]
 
-"When passing a vehicle, you should return to your lane when" = [
-    "You can see both its headlights in your rearview mirror",
-    "You have cleared the front bumper of the passed vehicle",
-    "You are 50 feet in front of the passed vehicle"
-]
+[[questions]]
+question = "When passing a vehicle, you should return to your lane when"
+answers = ["You can see both its headlights in your rearview mirror"]
+alternatives = ["You have cleared the front bumper of the passed vehicle", "You are 50 feet in front of the passed vehicle"]
 
 "You are approaching an intersection and see these pavement markings. What do these pavement markings tell you" = [
     "You may make a right turn only from the right lane",
