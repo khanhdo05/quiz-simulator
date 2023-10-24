@@ -26,41 +26,35 @@ question = "When driving behind another vehicle on an entrance to a freeway, you
 answers = ["Be prepared for the other vehicle to slow down"]
 alternatives = ["Be prepared to enter the same gap of traffic as the other vehicle", "Not go faster than 20 mph"]
 
-"On an undivided highway when an emergency vehicle approaches with its siren and/or flashing lights on, you should" = [
-    "Pull to the right and stop",
-    "Drive slowly until it has passed",
-    "Speed up to clear traffic"
-]
+[[questions]]
+question = "On an undivided highway when an emergency vehicle approaches with its siren and/or flashing lights on, you should"
+answers = ["Pull to the right and stop"]
+alternatives = ["Drive slowly until it has passed", "Speed up to clear traffic"]
 
-"If the rear of your vehicle is skidding to the left, you should" = [
-    "Turn your steering wheel to the left to correct the skid",
-    "Not turn your steering wheel until you are through skidding",
-    "Turn your steering wheel to the right to correct the skid"
-]
+[[questions]]
+question = "If the rear of your vehicle is skidding to the left, you should"
+answers = ["Turn your steering wheel to the left to correct the skid"]
+alternatives = ["Not turn your steering wheel until you are through skidding", "Turn your steering wheel to the right to correct the skid"]
 
-"When approaching a stopped vehicle, such as a police car, tow truck, utility or maintenance vehicle, that is parked along the road and displaying flashing lights, what should you do" = [
-    "Change lanes if you safely can and slow down to a reasonable and safe speed as you pass",
-    "Stop abruptly",
-    "Continue as usual"
-]
+[[questions]]
+question = "When approaching a stopped vehicle, such as a police car, tow truck, utility or maintenance vehicle, that is parked along the road and displaying flashing lights, what should you do"
+answers = ["Change lanes if you safely can and slow down to a reasonable and safe speed as you pass"]
+alternatives = ["Stop abruptly", "Continue as usual"]
 
-"According to the Iowa Implied Consent Law for both resident and nonresident drivers" = [
-    "Both of the options are true",
-    "An arrested driver may be asked to submit to a chemical test to determine the alcohol content in his/her blood.",
-    "Refusal to submit to chemical testing will result in the driver's driving privileges being withdrawn."
-]
+[[questions]]
+question = "According to the Iowa Implied Consent Law for both resident and nonresident drivers"
+answers = ["Both of the options are true"]
+alternatives = ["An arrested driver may be asked to submit to a chemical test to determine the alcohol content in his/her blood.", "Refusal to submit to chemical testing will result in the driver's driving privileges being withdrawn."]
 
-"You see a school bus with flashing amber (yellow) lights. What is the bus driver doing" = [
-    "Signaling to other motorists that the bus will soon be stopping to load or unload school children",
-    "Changing gears",
-    "Preparing to make a turn"
-]
+[[questions]]
+question = "You see a school bus with flashing amber (yellow) lights. What is the bus driver doing"
+answers = ["Signaling to other motorists that the bus will soon be stopping to load or unload school children"]
+alternatives = ["Changing gears", "Preparing to make a turn"]
 
-"Which of the following is a safe backing technique" = [
-    "Accelerate gently and smoothly while looking carefully behind you",
-    "Look forward out through the windshield",
-    "Hold the steering wheel underhanded"
-]
+[[questions]]
+question = "Which of the following is a safe backing technique"
+answers = ["Accelerate gently and smoothly while looking carefully behind you"]
+alternatives = ["Look forward out through the windshield", "Hold the steering wheel underhanded"]
 
 "What should you do as you approach a curve in the road" = [
     "Reduce your speed before you enter the curve",
