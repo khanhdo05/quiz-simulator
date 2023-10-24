@@ -1,10 +1,15 @@
 # questions.toml
 
-"When preparing to make a left turn from a two-way street, you should drive" = [
-    "Close to the center line", 
-    "Close to the right hand side of the road", 
-    "On the left of the center line"
-]
+# Template:
+# [[questions]]
+# question = "What is the answer to the question"
+# answers = ["Correct Answer"]
+# alternatives = ["Option 1", "Option 2", "Option 3"]
+
+[[questions]]
+question = "When preparing to make a left turn from a two-way street, you should drive"
+answers = ["Close to the center line"]
+alternatives = ["Close to the right hand side of the road", "On the left of the center line"]
 
 "By looking ahead, to the sides of your vehicle and behind your vehicle as you drive, you will" = [
     "See potential problems and become better prepared to react", 
