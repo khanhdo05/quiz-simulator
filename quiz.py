@@ -30,9 +30,16 @@ def get_answers(question, alternatives, num_choices=1):
 
     # Handles when to display Choice or Choices (choose how many)
     while True:
+
         plural_s = "" if num_choices == 1 else f"s (choose {num_choices})" # If num_choice is 1, add nothing, else, add how many choices need to choose
         answer = input(f"\nChoice{plural_s}: ")
         answers = set(answer.replace(",", " ").split()) # Create a set of answers, replacing , with space and then split that string by space
+
+        # Handles invalid answer
+        if len(answers) != num_choices:
+            plural_s = "" if num_choices == 1 else f"s, separated by comma"
+            print(f"Please answer {num_choices} alternative{plural_s}")
+            continue # Skip the remaining code inside a loop for the current iteration only
 
     while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
         print(f"Please answer one of {', '.join(labeled_alternatives)}")
