@@ -163,50 +163,42 @@ alternatives = ["Be prepared to enter the same gap of traffic as the other vehic
     "Stop and proceed after a few seconds",
     "Stop only if children are crossing the roadway"
 ]
-"Broken yellow lines (dashes) are used on streets and highways to" = [
-    "Separate lanes of traffic moving in opposite directions",
-    "Indicate no passing zones",
-    "Separate lanes of traffic moving in the same direction"
-]
+[[questions]]
+question = "Broken yellow lines (dashes) are used on streets and highways to"
+answers = ["Separate lanes of traffic moving in opposite directions"]
+alternatives = ["Indicate no passing zones", "Separate lanes of traffic moving in the same direction"]
 
-"Unless a sign is posted, you may turn right at a red light if" = [
-    "You stop and yield to pedestrians and other vehicles before turning",
-    "You slow down and proceed with caution",
-    "The street you are turning onto is one-way"
-]
+[[questions]]
+question = "Unless a sign is posted, you may turn right at a red light if"
+answers = ["You stop and yield to pedestrians and other vehicles before turning"]
+alternatives = ["You slow down and proceed with caution", "The street you are turning onto is one-way"]
 
-"Before making a turn, you should" = [
-    "Look to see if other vehicles and/or pedestrians will be in your way",
-    "Stop at a crosswalk",
-    "Move slightly to the left when turning right and move slightly to the right when turning left"
-]
+[[questions]]
+question = "Before making a turn, you should"
+answers = ["Look to see if other vehicles and/or pedestrians will be in your way"]
+alternatives = ["Stop at a crosswalk", "Move slightly to the left when turning right and move slightly to the right when turning left"]
 
-"A flashing red light at an intersection means" = [
-    "Stop and yield the right of way",
-    "Stop and wait for the green light",
-    "Slow and go with caution"
-]
+[[questions]]
+question = "A flashing red light at an intersection means"
+answers = ["Stop and yield the right of way"]
+alternatives = ["Stop and wait for the green light", "Slow and go with caution"]
 
-"As your speed increases it is most important to" = [
-    "Increase your following distance",
-    "Focus more on the vehicle in front of you",
-    "Decrease your following distance"
-]
+[[questions]]
+question = "As your speed increases it is most important to"
+answers = ["Increase your following distance"]
+alternatives = ["Focus more on the vehicle in front of you", "Decrease your following distance"]
 
-"When driving on gravel or dirt roads" = [
-    "Reduce your speed",
-    "Increase your following distance",
-    "Avoid sudden changes in speed or direction"
-]
+[[questions]]
+question = "When driving on gravel or dirt roads"
+answers = ["Reduce your speed"]
+alternatives = ["Increase your following distance", "Avoid sudden changes in speed or direction"]
 
-"The best way to keep your car from hydroplaning (tires riding on top of water) is" = [
-    "Keep speed down",
-    "Make sharp turns",
-    "Brake hard"
-]
+[[questions]]
+question = "The best way to keep your car from hydroplaning (tires riding on top of water) is"
+answers = ["Keep speed down"]
+alternatives = ["Make sharp turns", "Brake hard"]
 
-"When you are behind a motorcycle, you should" = [
-    "Allow more following distance",
-    "Be ready to use your horn",
-    "Concentrate on the center line"
-]
+[[questions]]
+question = "When you are behind a motorcycle, you should"
+answers = ["Allow more following distance"]
+alternatives = ["Be ready to use your horn", "Concentrate on the center line"]
