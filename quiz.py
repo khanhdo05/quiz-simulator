@@ -18,7 +18,7 @@ def prepare_questions(questions, num_questions):
     return random.sample(list(questions.items()), k=num_questions)
 
 # Handles user interaction
-def get_answer(question, alternatives):
+def get_answers(question, alternatives, num_choices=1):
     print(f"{question}❓")
 
     # Print alternatives labeled by a, b, c,... 
@@ -28,7 +28,12 @@ def get_answer(question, alternatives):
     for label, alternative in labeled_alternatives.items():
         print(f"    ({label}) {alternative}")
 
-    # Ask for user's input of alternative label, check if it's a valid one or not
+    # Handles when to display Choice or Choices (choose how many)
+    while True:
+        plural_s = "" if num_choices == 1 else f"s (choose {num_choices})"
+        answer = input(f"\nChoice{plural_s}: ")
+        answers = set(answer.replace(",", " ").split())
+
     while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
         print(f"Please answer one of {', '.join(labeled_alternatives)}")
 
