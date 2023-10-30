@@ -41,6 +41,12 @@ def get_answers(question, alternatives, num_choices=1):
             print(f"Please answer {num_choices} alternative{plural_s}")
             continue # Skip the remaining code inside a loop for the current iteration only
 
+        if any(
+            (invalid := answers) not in labeled_alternatives
+            for answer in answers
+            
+        )
+
     while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
         print(f"Please answer one of {', '.join(labeled_alternatives)}")
 
