@@ -60,12 +60,18 @@ def get_answers(question, alternatives, num_choices=1):
     return labeled_alternatives[answer_label]
 
 # Check if answer is corect or not, if correct, return 1, so later can count how many correct answers
-def ask_question(question, alternatives):
-    correct_answer = alternatives[0]
+def ask_question(question):
+    correct_answers = question["answers"]
+    alternatives = question["answers"] + question["alternatives"]
     ordered_alternatives = random.sample(alternatives, k=len(alternatives))
 
-    answer = get_answer(question, ordered_alternatives) # ask_question implements get_answer within its body
-    if answer == correct_answer:
+    answers = get_answers(
+        question=question["question"], 
+        alternatives=ordered_alternatives,
+        num_choices=len(correct_answers),
+    ) 
+
+    if set(answers) == set(correct_answers):
         print("⭐ Ding ding! Correct! ⭐")
         return 1
     else:
