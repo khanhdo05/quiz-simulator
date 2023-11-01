@@ -44,8 +44,14 @@ def get_answers(question, alternatives, num_choices=1):
         if any(
             (invalid := answers) not in labeled_alternatives
             for answer in answers
-            
-        )
+        ):
+            print(
+                f"{invalid!r} is an invalid choice. "
+                f"Please use one of the following: {', '.join(labeled_alternatives)}"
+            )
+            continue
+
+        return [labeled_alternatives[answer] for answer in answers]
 
     while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
         print(f"Please answer one of {', '.join(labeled_alternatives)}")
