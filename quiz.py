@@ -75,7 +75,8 @@ def ask_question(question):
         print("⭐ Ding ding! Correct! ⭐")
         return 1
     else:
-        print(f"The answer is {correct_answer!r}, not {answer!r}.") #!r put the {} in ''
+        is_or_are = " is" if len(correct_answers) == 1 else "s are"
+        print("\n- ".join([f"No. The correct answer{is_or_are}:"] + correct_answers))
         return 0
 
 # Combine every helper funcs together
