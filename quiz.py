@@ -42,10 +42,8 @@ def get_answers(question, alternatives, num_choices=1):
             print(f"Please answer {num_choices} alternative{plural_s}")
             continue # Skip the remaining code inside a loop for the current iteration only
 
-        if any(
-            (invalid := answers) not in labeled_alternatives
-            for answer in answers
-        ):
+        invalid = [ans for ans in answers if ans not in labeled_alternatives]
+        if invalid:
             print(
                 f"{invalid!r} is an invalid choice. "
                 f"Please use one of the following: {', '.join(labeled_alternatives)}"
@@ -53,12 +51,6 @@ def get_answers(question, alternatives, num_choices=1):
             continue
 
         return [labeled_alternatives[answer] for answer in answers]
-
-    while (answer_label := input("\nChoice: ").lower()) not in labeled_alternatives: # := to assign variable within expressions
-        print(f"Please answer one of {', '.join(labeled_alternatives)}")
-
-    # get_answer takes in 2 parameters, a question and its alternative options and return the alternative that user chose
-    return labeled_alternatives[answer_label]
 
 # Check if answer is corect or not, if correct, return 1, so later can count how many correct answers
 def ask_question(question):
@@ -80,16 +72,6 @@ def ask_question(question):
         print("\n- ".join([f"No. The correct answer{is_or_are}:"] + correct_answers))
         return 0
 
-# # Combine every helper funcs together
-# def run_quiz():
-#     questions = prepare_questions(QUESTIONS, NUM_QUESTIONS_PER_QUIZ)
-
-#     num_correct = 0
-#     for num, (question, alternatives) in enumerate(questions, start=1):
-#         print(f"\nQuestion {num}:")
-#         num_correct += ask_question(question)
-
-#     print(f"You've got {num_correct} correct answers out of {num} questions!")
 def run_quiz():
     questions = prepare_questions(
         QUESTIONS_PATH, num_questions=NUM_QUESTIONS_PER_QUIZ
