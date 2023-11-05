@@ -15,8 +15,16 @@ If you don't already have Python, download easily by running this command <br>
 
 ### Download quiz.py and questions.toml 
 ### Modify the questions.toml to change questions library
-Template:
-[[questions]]
-question = "What is the answer to the question"
-answers = ["Correct Answer 1", "Correct Answer 2]
-alternatives = ["Option 3", "Option 4", "Option 5"]
+Template: <br>
+```ruby
+[[questions]] 
+question = "What is the answer to the question" 
+answers = ["Correct Answer 1", "Correct Answer 2"] 
+alternatives = ["Option 3", "Option 4", "Option 5"] 
+```
+### Modify how many questions per quiz
+- Open quiz.py in code editor/ VS-Code
+- On line 12, change the constant number of NUM_QUESTIONS_PER_QUIZ to however many you want.
+
+## Credits
+Following tutorial by *realpython*
